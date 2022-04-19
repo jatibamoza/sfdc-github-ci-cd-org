@@ -1,5 +1,5 @@
 public class AccountHandler {
     public AccountHandler() {
-        Integer intA = 0;
+        Integer intB = 0;
     }
 }
