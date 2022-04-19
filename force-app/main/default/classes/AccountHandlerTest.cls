@@ -1,6 +1,6 @@
 @IsTest public class AccountHandlerTest {
     
     @IsTest public static void testAccountHandler() {
-        AccountHandler clsTestA = new AccountHandler();
+        AccountHandler clsTest = new AccountHandler();
     }
 }
