@@ -1,5 +1,5 @@
-public with sharing class AccountHandler {
+public class AccountHandler {
     public AccountHandler() {
-
+        Integer intA = 0;
     }
 }
