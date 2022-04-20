@@ -7,4 +7,8 @@
     @IsTest public static void testAccountHandler_2() {
         AccountHandler clsTest = new AccountHandler();
     }
+
+    @IsTest public static void testAccountHandler_3() {
+        AccountHandler clsTest = new AccountHandler();
+    }
 }
