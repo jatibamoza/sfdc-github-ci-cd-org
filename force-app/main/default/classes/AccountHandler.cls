@@ -6,5 +6,6 @@ public class AccountHandler {
         Boolean blB = true;
         String strB = '';
         Integer intA = 1;
+        Double duA = 0;
     }
 }
