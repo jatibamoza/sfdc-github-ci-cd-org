@@ -4,5 +4,7 @@ public class AccountHandler {
         String strA = '';
         Boolean blA = false;
         Boolean blB = true;
+        String strB = '';
+        
     }
 }
