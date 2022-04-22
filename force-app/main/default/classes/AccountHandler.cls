@@ -5,6 +5,6 @@ public class AccountHandler {
         Boolean blA = false;
         Boolean blB = true;
         String strB = '';
-        
+        Integer intA = 1;
     }
 }
