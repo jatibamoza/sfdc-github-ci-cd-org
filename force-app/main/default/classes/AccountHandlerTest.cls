@@ -11,4 +11,8 @@
     @IsTest public static void testAccountHandler_3() {
         AccountHandler clsTest = new AccountHandler();
     }
+
+    @IsTest public static void testAccountHandler_4() {
+        AccountHandler clsTest = new AccountHandler();
+    }
 }
