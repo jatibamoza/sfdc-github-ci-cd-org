@@ -66,7 +66,7 @@ jobs:
             #  run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
             # JATC: Print Author Name and Email
             - name: Update author information
-              run: echo ${{env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
+              run: echo ${{github.actor}} > AUTHOR
               
             # JATC: Raise Pull Request
             - name: 'Raise Pull Request'
@@ -75,8 +75,8 @@ jobs:
                 branch: intg
                 base: develop
                 title: "Auto Pull Request"
-                committer: ${{env.GIT_COMMIT_AUTHOR_NAME}} <${{env.GIT_COMMIT_AUTHOR_EMAIL}}
-                author: ${{env.GIT_COMMIT_AUTHOR_NAME }} <${{env.GIT_COMMIT_AUTHOR_EMAIL}}
+                committer: ${{github.actor}}
+                author: ${{github.actor}}
                 body: ${{github.event.pull_request.body}}
                 token: ${{secrets.JATC_TOKEN_GITHUB}}
                 delete-branch: false
