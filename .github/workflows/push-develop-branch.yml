@@ -65,19 +65,19 @@ jobs:
             # - name: 'Deploy destructive changes (if any) to Staging org'
             #  run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
             # JATC: Print Author Name and Email
-            - name: Update author information
-              run: echo ${{github.actor}} > AUTHOR
+            #- name: Update author information
+            #  run: echo ${{github.actor}} > AUTHOR
               
             # JATC: Raise Pull Request
-            - name: 'Raise Pull Request'
-              uses: peter-evans/create-pull-request@v4
-              with: 
-                branch: intg
-                base: develop
-                title: "Auto Pull Request"
-                committer: ${{github.actor}}
-                author: ${{github.actor}}
-                body: 
-                    Automatic body
-                token: ${{secrets.JATC_TOKEN_GITHUB}}
-                delete-branch: false
+            #- name: 'Raise Pull Request'
+            #  uses: peter-evans/create-pull-request@v4
+            #  with: 
+            #    branch: intg
+            #    base: develop
+            #    title: "Auto Pull Request"
+            #    committer: ${{github.actor}}
+            #    author: ${{github.actor}}
+            #    body: 
+            #        Automatic body
+            #    token: ${{secrets.JATC_TOKEN_GITHUB}}
+            #    delete-branch: false
