@@ -8,5 +8,6 @@ public class AccountHandler {
         Integer intA = 1;
         Double duA = 0;
         Double duB = 0;
+        Double duC = 0;
     }
 }
