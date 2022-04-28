@@ -9,5 +9,6 @@ public class AccountHandler {
         Double duA = 0;
         Double duB = 0;
         Double duC = 0;
+        String strC = '';
     }
 }
